@@ -1,7 +1,72 @@
-*{padding: 0%
-    ; margin: 0%;}
-    h1{text-align: center; color: white; background-color: blue; font-size: 50px;font-family: 'Odibee Sans', cursive;}
-    p{text-align: center;}
-   div{font-family: Georgia, 'Times New Roman', Times, serif;}
-   nav{text-align: center;font-family: 'Courier New', Courier, monospace;}
-   h1{text-align: center;}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+}
+/*fuente*/
+header{
+    padding:50px;
+    background-color: aquamarine;
+    text-align: center;
+    font-family: 'Odibee Sans', cursive;}
+    
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+}
+nav a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+aside{
+    flex: 30px;
+    background-color: beige;
+    padding: 20px;
+}
+section{
+    flex: 70%;
+    background-color: orange;
+    padding:20px;
+}
+footer{padding: 20px;
+text-align: center;
+background-color: pink;
+width: 100%;}
+article{
+    flex: 70%;
+    background-color: red;
+    padding: 20px; margin: 20px;
+}
+h2{text-align: center;}
+iframe{
+    max-width: 100%;
+    height: auto;
+}
+/*transicion*/
+nav:hover {background-color: aqua; transition: all 0.2s ease-in;;
+    }   
+    /*mediaquerie*/
+@media screen and (max-width:600px) {
+    nav,.row{
+        flex-direction: column;
+    }}
+    @media screen and (min-width:600px) {
+        nav,.row{
+            flex-direction: row-reverse;
+        }}
+        @media screen and (min-width:800px) {
+            nav,.row{
+                flex-direction: row;
+            }}
+        
